@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LeadFlow CRM 🚀
 
 > A modern, full-stack Client Lead Management System (Mini CRM) built for managing, tracking, and converting leads — portfolio-ready and production-grade.
@@ -307,3 +308,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 > Built with ❤️ as an internship project — LeadFlow CRM
+=======
+# FUTURE_FS_02
+>>>>>>> 3fa160ce21fc3a2508b911e85a042c73d91bcc5c
