@@ -20,6 +20,12 @@
 
 ---
 
+## Workflow
+
+![LeadFlow CRM Workflow](assets/workflow.png)
+
+---
+
 ## ✨ Features
 
 ### Authentication
