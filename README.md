@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # LeadFlow CRM 🚀
 
 > A modern, full-stack Client Lead Management System (Mini CRM) built for managing, tracking, and converting leads — portfolio-ready and production-grade.
