@@ -292,15 +292,6 @@ leadflow-crm/
 
 ---
 
-## 👤 Author
-
-**Your Name**
-- GitHub: [@your-username](https://github.com/Amankr0075)
-- LinkedIn: [your-linkedin](https://linkedin.com/in/amanxelon)
-- Portfolio: [your-portfolio.com](https://amankr0075.github.io/FUTURE_FS_01/)
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
