@@ -295,9 +295,9 @@ leadflow-crm/
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
-- LinkedIn: [your-linkedin](https://linkedin.com/in/your-profile)
-- Portfolio: [your-portfolio.com](https://your-portfolio.com)
+- GitHub: [@your-username](https://github.com/Amankr0075)
+- LinkedIn: [your-linkedin](https://linkedin.com/in/amanxelon)
+- Portfolio: [your-portfolio.com](https://amankr0075.github.io/FUTURE_FS_01/)
 
 ---
 
