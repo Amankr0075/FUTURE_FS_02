@@ -112,12 +112,14 @@ const updateLead = async (req, res) => {
       });
     }
 
+    const updateData = { ...req.body };
+    if (activityEntries.length > 0) {
+      updateData.$push = { activityLog: { $each: activityEntries } };
+    }
+
     const updatedLead = await Lead.findByIdAndUpdate(
       req.params.id,
-      {
-        ...req.body,
-        $push: activityEntries.length > 0 ? { activityLog: { $each: activityEntries } } : {},
-      },
+      updateData,
       { new: true, runValidators: true }
     );
 

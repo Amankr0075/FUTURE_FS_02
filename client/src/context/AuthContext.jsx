@@ -25,7 +25,11 @@ export const AuthProvider = ({ children }) => {
       setUser(data.user);
       return { success: true };
     } catch (error) {
-      return { success: false, message: error.response?.data?.message || 'Login failed' };
+      const baseMessage = error.response?.data?.message || error.message || 'Login failed';
+      const message = baseMessage === 'Network Error'
+        ? 'Cannot reach backend API. Make sure the server is running on localhost:5000.'
+        : baseMessage;
+      return { success: false, message };
     } finally {
       setLoading(false);
     }
@@ -41,7 +45,11 @@ export const AuthProvider = ({ children }) => {
       setUser(data.user);
       return { success: true };
     } catch (error) {
-      return { success: false, message: error.response?.data?.message || 'Registration failed' };
+      const baseMessage = error.response?.data?.message || error.message || 'Registration failed';
+      const message = baseMessage === 'Network Error'
+        ? 'Cannot reach backend API. Make sure the server is running on localhost:5000.'
+        : baseMessage;
+      return { success: false, message };
     } finally {
       setLoading(false);
     }
