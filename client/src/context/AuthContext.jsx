@@ -27,7 +27,7 @@ export const AuthProvider = ({ children }) => {
     } catch (error) {
       const baseMessage = error.response?.data?.message || error.message || 'Login failed';
       const message = baseMessage === 'Network Error'
-        ? 'Cannot reach backend API. Make sure the server is running on localhost:5000.'
+        ? `Cannot reach backend API at ${import.meta.env.VITE_API_URL || 'localhost:5000'}. Make sure the server is running.`
         : baseMessage;
       return { success: false, message };
     } finally {
@@ -47,7 +47,7 @@ export const AuthProvider = ({ children }) => {
     } catch (error) {
       const baseMessage = error.response?.data?.message || error.message || 'Registration failed';
       const message = baseMessage === 'Network Error'
-        ? 'Cannot reach backend API. Make sure the server is running on localhost:5000.'
+        ? `Cannot reach backend API at ${import.meta.env.VITE_API_URL || 'localhost:5000'}. Make sure the server is running.`
         : baseMessage;
       return { success: false, message };
     } finally {
