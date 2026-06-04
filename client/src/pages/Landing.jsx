@@ -50,12 +50,12 @@ const Landing = () => {
             <span className="flex h-2 w-2 rounded-full bg-indigo-500 animate-ping" />
             The Modern CRM Experience
           </div>
-          
+
           <h1 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-400 tracking-tight mb-8 leading-tight">
             Close More Deals.<br />
             <span className="bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-400">With Less Effort.</span>
           </h1>
-          
+
           <p className="text-lg md:text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
             LeadFlow CRM transforms how you manage prospects. Streamline your sales pipeline, gain actionable insights, and build better relationships—all in one beautiful workspace.
           </p>
@@ -72,33 +72,33 @@ const Landing = () => {
         </div>
 
         {/* Dashboard Preview */}
-        <div className="mt-24 max-w-5xl mx-auto relative group perspective">
+        <div className="mt-24 max-w-4xl mx-auto relative group perspective">
           {/* Main Glow Behind the Mockup */}
           <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/30 to-violet-500/30 blur-[100px] opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-          
+
           <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-slate-900 to-transparent z-10 pointer-events-none" />
-          
+
           <div className="relative rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-2 shadow-2xl transform transition-all duration-700 hover:rotate-0 hover:scale-[1.02] rotate-x-12 scale-100 hover:shadow-indigo-500/25">
-             <div className="rounded-xl border border-white/5 bg-slate-950 overflow-hidden shadow-2xl relative group-hover:border-indigo-500/30 transition-colors duration-500">
-                {/* Fake browser header */}
-                <div className="flex items-center gap-2 px-4 py-3 bg-white/5 border-b border-white/5 backdrop-blur-md">
-                   <div className="w-3 h-3 rounded-full bg-red-500/80 shadow-[0_0_10px_rgba(239,68,68,0.5)]" />
-                   <div className="w-3 h-3 rounded-full bg-yellow-500/80 shadow-[0_0_10px_rgba(234,179,8,0.5)]" />
-                   <div className="w-3 h-3 rounded-full bg-green-500/80 shadow-[0_0_10px_rgba(34,197,94,0.5)]" />
-                </div>
-                
-                {/* The Mockup Image */}
-                <div className="relative">
-                  <img 
-                    src={`${import.meta.env.BASE_URL}hero-mockup.png`} 
-                    alt="LeadFlow CRM Dashboard Interface" 
-                    className="w-full h-auto object-cover opacity-80 mix-blend-screen group-hover:opacity-100 group-hover:mix-blend-normal transition-all duration-700"
-                  />
-                  
-                  {/* Decorative Scanline/Glow over the image */}
-                  <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/20 via-transparent to-violet-500/10 pointer-events-none mix-blend-overlay opacity-50 group-hover:opacity-100 transition-opacity duration-500" />
-                </div>
-             </div>
+            <div className="rounded-xl border border-white/5 bg-slate-950 overflow-hidden shadow-2xl relative group-hover:border-indigo-500/30 transition-colors duration-500">
+              {/* Fake browser header */}
+              <div className="flex items-center gap-2 px-4 py-3 bg-white/5 border-b border-white/5 backdrop-blur-md">
+                <div className="w-3 h-3 rounded-full bg-red-500/80 shadow-[0_0_10px_rgba(239,68,68,0.5)]" />
+                <div className="w-3 h-3 rounded-full bg-yellow-500/80 shadow-[0_0_10px_rgba(234,179,8,0.5)]" />
+                <div className="w-3 h-3 rounded-full bg-green-500/80 shadow-[0_0_10px_rgba(34,197,94,0.5)]" />
+              </div>
+
+              {/* The Mockup Image */}
+              <div className="relative aspect-video">
+                <img
+                  src={`${import.meta.env.BASE_URL}hero-mockup.png`}
+                  alt="LeadFlow CRM Dashboard Interface"
+                  className="w-full h-full object-cover object-top opacity-80 mix-blend-screen group-hover:opacity-100 group-hover:mix-blend-normal transition-all duration-700"
+                />
+
+                {/* Decorative Scanline/Glow over the image */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/20 via-transparent to-violet-500/10 pointer-events-none mix-blend-overlay opacity-50 group-hover:opacity-100 transition-opacity duration-500" />
+              </div>
+            </div>
           </div>
         </div>
       </main>
@@ -111,32 +111,32 @@ const Landing = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          <FeatureCard 
+          <FeatureCard
             icon={Users}
             title="Intelligent Lead Management"
             description="Centralize your contacts. Track every interaction, set reminders, and never let a prospect slip through the cracks again."
           />
-          <FeatureCard 
+          <FeatureCard
             icon={Activity}
             title="Real-time Pipeline"
             description="Visualize your sales process. Drag and drop leads through custom stages and instantly see where your revenue stands."
           />
-          <FeatureCard 
+          <FeatureCard
             icon={PieChart}
             title="Actionable Analytics"
             description="Turn data into decisions. Beautiful dashboards provide insights into conversion rates, team performance, and growth trends."
           />
-          <FeatureCard 
+          <FeatureCard
             icon={Zap}
             title="Lightning Fast"
             description="Built on modern architecture. Experience zero lag as you navigate between records, update statuses, and log calls."
           />
-          <FeatureCard 
+          <FeatureCard
             icon={Shield}
             title="Enterprise Security"
             description="Your data is encrypted and secure. Granular permissions ensure team members only see what they need to."
           />
-          <FeatureCard 
+          <FeatureCard
             icon={TrendingUp}
             title="Boosted Productivity"
             description="Automate repetitive tasks and focus on selling. LeadFlow helps you close deals 30% faster on average."
