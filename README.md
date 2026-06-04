@@ -10,16 +10,6 @@
 
 ---
 
-## 📸 Screenshots
-
-> _Add screenshots of your live deployment here._
-
-| Dashboard | Leads Table | Analytics |
-|-----------|-------------|-----------|
-| ![Dashboard]() | ![Leads]() | ![Analytics]() |
-
----
-
 ## Workflow
 
 ![LeadFlow CRM Workflow](assets/workflow.png)
