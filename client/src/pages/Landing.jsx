@@ -71,31 +71,32 @@ const Landing = () => {
           </div>
         </div>
 
-        {/* Dashboard Preview mockup */}
-        <div className="mt-20 max-w-5xl mx-auto relative group perspective">
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent z-10" />
-          <div className="relative rounded-2xl border border-white/10 bg-slate-900/50 backdrop-blur-sm p-2 shadow-2xl transform transition-transform duration-500 hover:rotate-0 rotate-x-12 scale-105">
-             <div className="rounded-xl border border-white/5 bg-slate-900/80 overflow-hidden shadow-2xl">
+        {/* Dashboard Preview */}
+        <div className="mt-24 max-w-5xl mx-auto relative group perspective">
+          {/* Main Glow Behind the Mockup */}
+          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/30 to-violet-500/30 blur-[100px] opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+          
+          <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-slate-900 to-transparent z-10 pointer-events-none" />
+          
+          <div className="relative rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-2 shadow-2xl transform transition-all duration-700 hover:rotate-0 hover:scale-[1.02] rotate-x-12 scale-100 hover:shadow-indigo-500/25">
+             <div className="rounded-xl border border-white/5 bg-slate-950 overflow-hidden shadow-2xl relative group-hover:border-indigo-500/30 transition-colors duration-500">
                 {/* Fake browser header */}
-                <div className="flex items-center gap-2 px-4 py-3 bg-white/5 border-b border-white/5">
-                   <div className="w-3 h-3 rounded-full bg-red-500/80" />
-                   <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
-                   <div className="w-3 h-3 rounded-full bg-green-500/80" />
+                <div className="flex items-center gap-2 px-4 py-3 bg-white/5 border-b border-white/5 backdrop-blur-md">
+                   <div className="w-3 h-3 rounded-full bg-red-500/80 shadow-[0_0_10px_rgba(239,68,68,0.5)]" />
+                   <div className="w-3 h-3 rounded-full bg-yellow-500/80 shadow-[0_0_10px_rgba(234,179,8,0.5)]" />
+                   <div className="w-3 h-3 rounded-full bg-green-500/80 shadow-[0_0_10px_rgba(34,197,94,0.5)]" />
                 </div>
-                {/* Abstract dashboard content */}
-                <div className="p-8 grid grid-cols-1 md:grid-cols-3 gap-6 opacity-50">
-                   <div className="col-span-2 space-y-4">
-                     <div className="h-32 rounded-lg bg-indigo-500/10 border border-indigo-500/20" />
-                     <div className="grid grid-cols-2 gap-4">
-                        <div className="h-24 rounded-lg bg-white/5 border border-white/10" />
-                        <div className="h-24 rounded-lg bg-white/5 border border-white/10" />
-                     </div>
-                   </div>
-                   <div className="space-y-4">
-                     <div className="h-16 rounded-lg bg-white/5 border border-white/10" />
-                     <div className="h-16 rounded-lg bg-white/5 border border-white/10" />
-                     <div className="h-16 rounded-lg bg-white/5 border border-white/10" />
-                   </div>
+                
+                {/* The Mockup Image */}
+                <div className="relative">
+                  <img 
+                    src={`${import.meta.env.BASE_URL}hero-mockup.png`} 
+                    alt="LeadFlow CRM Dashboard Interface" 
+                    className="w-full h-auto object-cover opacity-80 mix-blend-screen group-hover:opacity-100 group-hover:mix-blend-normal transition-all duration-700"
+                  />
+                  
+                  {/* Decorative Scanline/Glow over the image */}
+                  <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/20 via-transparent to-violet-500/10 pointer-events-none mix-blend-overlay opacity-50 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
              </div>
           </div>
