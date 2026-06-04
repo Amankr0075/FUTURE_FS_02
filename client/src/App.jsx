@@ -14,11 +14,12 @@ import Analytics from './pages/Analytics';
 import Profile from './pages/Profile';
 import Settings from './pages/Settings';
 import NotFound from './pages/NotFound';
+import Landing from './pages/Landing';
 
 function App() {
   return (
     <AuthProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/FUTURE_FS_02">
         <Routes>
           {/* Public routes */}
           <Route path="/login" element={<Login />} />
@@ -36,8 +37,8 @@ function App() {
             </Route>
           </Route>
 
-          {/* Redirects */}
-          <Route path="/" element={<Navigate to="/dashboard" replace />} />
+          {/* Redirects & Root */}
+          <Route path="/" element={<Landing />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
 
